@@ -64,9 +64,6 @@ end
 
 def full?(board)
   board.any? { |m| m == ' ' || m == '' || m.nil? } ? false : true
-  # else
-  #   board.all? { |m| m == 'X' || m == 'O'}
-  # end
 end
 
 def draw?(board)
