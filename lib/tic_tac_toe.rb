@@ -78,3 +78,9 @@ def winner(board)
   winning_move = won?(board)
   board[winning_move.first] if winning_move
 end
+
+def play(board)
+  9.times do
+    turn(board)
+  end
+end
