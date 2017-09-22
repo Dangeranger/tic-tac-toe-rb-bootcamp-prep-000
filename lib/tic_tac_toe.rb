@@ -21,10 +21,14 @@ def input_to_index(user_input)
   user_input.to_i - 1
 end
 
-def move(board, move, mark)
-  board[move] = mark
+def move(board, position, mark)
+  board[position] = mark
 end
 
 def position_taken?(board, index)
   !(board[index].nil? || board[index] == ' ')
+end
+
+def valid_move?(board, position)
+  
 end
