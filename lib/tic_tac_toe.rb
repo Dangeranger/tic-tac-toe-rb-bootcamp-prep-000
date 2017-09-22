@@ -73,3 +73,8 @@ end
 def over?(board)
   won?(board) || draw?(board) || full?(board) ? true : false
 end
+
+def winner(board)
+  winning_move = won?(board)
+  board[winning_move.first] if winning_move
+end
