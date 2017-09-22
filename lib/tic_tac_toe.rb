@@ -66,10 +66,10 @@ def full?(board)
   if board.any? { |m| m == ' '}
     false
   else
-    draw?(board)
+    board.all? { |m| m == 'X' || m == 'O'}
   end
 end
 
 def draw?(board)
-  board.all? { |m| m == 'X' || m == 'O'} && !won?(board)
+   && !won?(board)
 end
