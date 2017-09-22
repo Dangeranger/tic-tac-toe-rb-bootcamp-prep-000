@@ -80,8 +80,6 @@ def winner(board)
 end
 
 def play(board)
-puts "Welcome to Tic Tac Toe!"  
-# 9.times do
-#     turn(board)
-#   end
+  puts "Welcome to Tic Tac Toe!"
+  turn(board)
 end
