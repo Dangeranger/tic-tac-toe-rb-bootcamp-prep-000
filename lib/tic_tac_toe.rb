@@ -25,10 +25,10 @@ def move(board, position, mark)
   board[position] = mark
 end
 
-def position_taken?(board, index)
-  !(board[index].nil? || board[index] == ' ')
+def position_taken?(board, position)
+  !(board[position].nil? || board[position] == ' ')
 end
 
 def valid_move?(board, position)
-  
+
 end
