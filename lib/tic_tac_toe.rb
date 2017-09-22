@@ -63,7 +63,7 @@ def won?(board)
 end
 
 def full?(board)
-  board.any? { |m| [' ', '', nil].include(m) } ? false : true
+  board.any? { |m| [' ', '', nil].include?(m) } ? false : true
   # board.any? { |m| m == ' ' || m == '' || m.nil? } ? false : true
 end
 
