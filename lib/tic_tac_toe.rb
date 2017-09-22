@@ -52,3 +52,12 @@ end
 def current_player(board)
   turn_count(board) % 2 == 0 ? 'X' : 'O'
 end
+
+def won?(board)
+  WIN_COMBINATIONS.any? do |comb|
+    result = comb.reduce('') do |string, mark|
+      string << board[mark]
+    end
+    return comb if result == 'XXX' || result == 'OOO'
+  end
+end
