@@ -81,5 +81,7 @@ end
 
 def play(board)
   puts "Welcome to Tic Tac Toe!"
-  turn(board)
+  while !over?(board)
+    turn(board)
+  end
 end
