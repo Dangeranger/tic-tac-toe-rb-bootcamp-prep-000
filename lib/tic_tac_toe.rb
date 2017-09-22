@@ -26,5 +26,5 @@ def move(board, move, mark)
 end
 
 def position_taken?(board, index)
-  !(board[move].nil? || board[index] == ' ')
+  !(board[index].nil? || board[index] == ' ')
 end
