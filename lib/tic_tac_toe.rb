@@ -64,7 +64,7 @@ end
 
 def full?(board)
   return false if board.any? { |m| m == ' ' || m == '' || m.nil? }
-    
+  true
   # else
   #   board.all? { |m| m == 'X' || m == 'O'}
   # end
