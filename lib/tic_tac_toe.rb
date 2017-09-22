@@ -61,3 +61,11 @@ def won?(board)
     return comb if result == 'XXX' || result == 'OOO'
   end
 end
+
+def full?(board)
+  if board.any? { |m| m == ' '}
+    false
+  else
+    draw?(board)
+  end
+end
