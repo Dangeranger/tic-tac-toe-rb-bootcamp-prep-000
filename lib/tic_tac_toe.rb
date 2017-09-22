@@ -81,7 +81,6 @@ def winner(board)
 end
 
 def play(board)
-  puts "Welcome to Tic Tac Toe!"
   while !over?(board)
     turn(board)
   end
